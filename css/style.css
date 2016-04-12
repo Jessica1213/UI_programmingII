@@ -1,0 +1,73 @@
+body{
+  background-color: #b3e6ff;
+}
+.floating {
+  /* The animation’s duration */
+  animation-duration: 10000ms;
+  /* The number of times we want the animation to run */
+  animation-iteration-count: infinite;
+}
+.floating img {
+  width: 20%;
+  height : auto;
+}
+#B1{	animation-name: movingB1;}
+@keyframes movingB1 {
+  0% {
+    transform: translate(10%, 40%);
+    opacity: 100;
+  }
+  50% {
+    transform: translate(10%, 80%);
+    opacity: 100;
+  }
+  100% {
+    transform: translate(10%, 40%);
+    opacity: 100;
+  }
+}
+#B2{	animation-name: movingB2;}
+@keyframes movingB2 {
+  0% {
+    transform: translate(60%, 30%);
+    opacity: 100;
+  }
+  50% {
+    transform: translate(60%, 70%);
+    opacity: 100;
+  }
+  100% {
+    transform: translate(60%, 30%);
+    opacity: 100;
+  }
+}
+#C1{	animation-name: movingC1;}
+@keyframes movingC1 {
+  0% {
+    transform: translate(30%, 20%);
+    opacity: 100;
+  }
+  50% {
+    transform: translate(30%, 60%);
+    opacity: 100;
+  }
+  100% {
+    transform: translate(30%, 20%);
+    opacity: 100;
+  }
+}
+#C2{	animation-name: movingC2;}
+@keyframes movingC2 {
+  0% {
+    transform: translate(70%, 50%);
+    opacity: 100;
+  }
+  50% {
+    transform: translate(70%, 90%);
+    opacity: 100;
+  }
+  100% {
+    transform: translate(70%, 50%);
+    opacity: 100;
+  }
+}
