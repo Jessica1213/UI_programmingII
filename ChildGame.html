@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+    <link rel="stylesheet" href="css/ChildGameCSS.css">
+    <script src="JavascriptFiles/Library/jquery-1.12.0.js"></script>
+    <script src="JavascriptFiles/ChildGame-Questions.js"></script>
+
+</head>
+<body>
+    <div id="questionAndAnswerDivs">
+        <div id="AnswerAnimationsDiv">
+            <div class='a' draggable="true" ondragstart="drag(event)"><img id="aImg" src=""></div>
+            <div class='b' draggable="true" ondragstart="drag(event)"><img id="bImg" src=""></div>
+            <div class='c' draggable="true" ondragstart="drag(event)"><img id="cImg" src=""></div>
+            <div class='d' draggable="true" ondragstart="drag(event)"><img id="dImg" src=""></div>
+        </div>
+
+        <div id="QuestionDiv">
+            <!--<Canvas id="questionCanvas"></Canvas>-->
+            <h3 id="question"></h3>
+        </div>
+    </div>
+    <div id="resultDiv">
+        <div id="scores"></div>
+        <div id="basket" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="pic/basket.png" height="130" width="130"></div>
+    </div>
+    ​
+
+</body>
+</html>
