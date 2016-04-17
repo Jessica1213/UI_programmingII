@@ -2,18 +2,18 @@ body{
   background-color: #b3e6ff;
 }
 .header{
-  border:5px solid black;
+  /*border:5px solid black;*/
   height : 10%;
   text-align:center;
   font-family:"Comic Sans MS", cursive, sans-serif;
   font-size:xx-large;
 }
 .content{
-  border:5px solid red;
+  /*border:5px solid red;*/
   height : 80%;
 }
 .footer{
-  border:5px solid blue;
+  /*border:5px solid blue;*/
   height : 5%;
   text-align:center;
   font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
