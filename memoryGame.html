@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="css/memoryGameCSS.css">
+    <script src="JavascriptFiles/Library/jquery-1.12.0.js"></script>
+    <script src="JavascriptFiles/memoryGameJavascript.js"></script>
+
+</head>
+<body>
+<div id="questionAndAnswerDivs">
+    <div id="AnswerAnimationsDiv"><!--This div is used to show the animated cards as answers for the memory game -->
+        <div class="flip3D">
+            <div class="back"><img id="aImg" src=""></div>
+            <div class="front" id="a" onmouseover="checkAnswer(this)"></div>
+        </div>
+        <div class="flip3D">
+            <div class="back"><img id="bImg" src=""></div>
+            <div class="front" id="b" onmouseover="checkAnswer(this)"></div>
+        </div>
+        <div class="flip3D">
+            <div class="back"><img id="cImg" src=""></div>
+            <div class="front" id="c" onmouseover="checkAnswer(this)"></div>
+        </div>
+        <div class="flip3D">
+            <div class="back"><img id="dImg" src=""></div>
+            <div class="front" id="d" onmouseover="checkAnswer(this)"></div>
+        </div>
+    </div>
+
+    <div id="QuestionDiv"><!--This div is used for showing questions-->
+        <!--<Canvas id="questionCanvas"></Canvas>-->
+        <h3 id="question"></h3>
+    </div>
+</div>
+<div id="resultDiv"><!--This div is used to show the scores and the basket -->
+    <div id="scores"></div>
+</div>
+​
+
+</body>
+</html>

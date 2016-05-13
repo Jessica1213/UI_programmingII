@@ -1,0 +1,120 @@
+body{
+    background-color: #b3e6ff;
+}
+
+#questionAndAnswerDivs{
+    float: left;
+    width: 90%;
+}
+
+#AnswerAnimationsDiv{
+    border: 1px solid #1cffd8;
+    height: 73vh;
+    background-color: #1cffd8;
+}
+
+#QuestionDiv{
+    border: 1px solid #1b7bff;
+    height: 20vh;
+    margin-top: 10px;
+    background-color: #1b7bff;
+}
+
+#questionCanvas{
+    height: 20vh;
+    width: 100%;
+}
+
+#resultDiv{
+    background-color: #ff7ee6;
+    border: 1px solid #ff7ee6;
+    height: 95vh;
+    width: 10%;
+    margin-left: 90.5%;
+}
+
+#question{
+    color: #801772;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 45px;
+}
+
+
+div.a {
+    width: 100px;
+    height:100px;
+    position:fixed;
+    cursor: move;
+}
+div.b {
+    width: 100px;
+    height:100px;
+    position:fixed;
+    cursor: move;
+}
+div.c {
+    width: 100px;
+    height:100px;
+    position:fixed;
+    cursor: move;
+}
+
+div.d {
+    width: 100px;
+    height:100px;
+    position:fixed;
+    cursor: move;
+}
+
+#scores{
+    margin-top: 0vh;
+    margin-left: 0px;
+    height: 73vh;
+    width: 100%;
+}
+
+#basket{
+    margin-top: 10px;
+    margin-left: 0px;
+    height: 20vh;
+    width: 100%;
+}
+
+.flip3D{
+    width: 240px;
+    height:200px;
+    margin: 10px;
+    float: left;
+}
+
+.flip3D > .front{
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    background: #FC0;
+    width: 240px;
+    height: 200px;
+    border-radius: 7px;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+}
+
+.flip3D > .back{
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    background: #800BFF;
+    width: 240px;
+    height: 200px;
+    border-radius: 7px;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+}
+
+.flip3D:hover > .front{
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.flip3D:hover > .back{
+    transform: perspective(600px) rotateY(0deg);
+}

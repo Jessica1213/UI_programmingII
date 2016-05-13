@@ -1,26 +1,52 @@
-
+/**
+ * Created by MA on 5/13/2016.
+ */
 var questions = new Array();//this array is for storing the questions as strings
 var questionIndex = 0;//this variable counts and determines the questions to show
-
 questions[0] = "HORSE??? ";
 questions[1] = "9-5 = ???";
 //it can be continued...
 
-
 $(document).ready(function() {
-
-    setQuestionAndAnswer();//when the page loads for the first time, this function is called to show the first question
-
-    animateDiv($('.a'));
-    animateDiv($('.b'));
-    animateDiv($('.c'));
-    animateDiv($('.d'));
-
+    //when the page loads for the first time, this function is called to show the first question
+    showCards();
 });
+
+//This function show four cards. one of these cards is the answer.
+function showCards(){
+    document.getElementById("question").innerHTML = "";
+
+    src="pic/" + questionIndex + "/a.png";
+    var aImg= '<img id="img1" src="' + src + '" height="150px" width="150px">';
+    $("#a").append(aImg);
+
+    src="pic/" + questionIndex + "/b.png";
+    var bImg= '<img id="img2" src="' + src + '" height="150px" width="150px">';
+    $("#b").append(bImg);
+
+    src="pic/" + questionIndex + "/c.png";
+    var cImg= '<img id="img3" src="' + src + '" height="150px" width="150px">';
+    $("#c").append(cImg);
+
+    src="pic/" + questionIndex + "/d.png";
+    var dImg= '<img id="img4" src="' + src + '" height="150px" width="150px">';
+    $("#d").append(dImg);
+
+
+
+    window.setTimeout(setQuestionAndAnswer,3000);
+}
 
 
 //This function shows the question. It shows the answers of each question as images as well.
 function setQuestionAndAnswer(){
+
+    //First, the answers that were going to be memorized are deleted
+    $("#img1").remove();
+    $("#img2").remove();
+    $("#img3").remove();
+    $("#img4").remove();
+
     document.getElementById("question").innerHTML = questions[questionIndex];
     /*var c = document.getElementById("questionCanvas");
      var ctx = c.getContext("2d");
@@ -29,8 +55,8 @@ function setQuestionAndAnswer(){
 
 
     /*The answers of each question are inside the folder pic/indexOfQuestion
-    for example the answers of the first question is in the path pic/0, the second one in the path pic/1
-    **/
+     for example the answers of the first question is in the path pic/0, the second one in the path pic/1
+     **/
     src="pic/" + questionIndex + "/a.png";
     var aImg= document.getElementById("aImg");
     aImg.setAttribute("src",src);
@@ -58,78 +84,25 @@ function setQuestionAndAnswer(){
 
 
 
-//This function determines new position for each animated image randomly
-function makeNewPosition($container) {
 
-    // Get viewport dimensions (remove the dimension of the div)
-    var h = $container.height() - (25*($container.height())/100);
-    var w = $container.width() - (25*($container.width())/100);
+//Whenever a user chooses an option as an answer, this function is called
+function checkAnswer(questionID) {
 
-    var nh = Math.floor(Math.random() * h);
-    var nw = Math.floor(Math.random() * w);
-
-    return [nh, nw];
-
-}
-
-
-function animateDiv($target) {
-    var newq = makeNewPosition($target.parent());
-    var oldq = $target.offset();
-    var speed = calcSpeed([oldq.top, oldq.left], newq);
-
-    $target.animate({
-        top: newq[0],
-        left: newq[1]
-    }, speed, function() {
-        animateDiv($target);//animates for ever
-    });
-
-}
-
-function calcSpeed(prev, next) {
-
-    var x = Math.abs(prev[1] - next[1]);
-    var y = Math.abs(prev[0] - next[0]);
-
-    var greatest = x > y ? x : y;
-
-    var speedModifier = 0.1;
-
-    var speed = Math.ceil(greatest / speedModifier);
-
-    return speed;
-
-}
-
-
-function allowDrop(ev) {
-    ev.preventDefault();
-}
-
-function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
-}
-
-
-/*when one animated image as an answer is dropped on to the basket,
-this function is called in order to check the correctness of the answer*/
-function drop(ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    if(data=='dImg') {//if the answer is correct, green star pops out and the next question appears
-
+    if(questionID.id=='d') {//if the answer is correct, green star pops out and the next question appears
+        //ev.target.appendChild(document.getElementById(data));
         makeStar();
         questionIndex++;
         if(questionIndex<2)
-        setQuestionAndAnswer();
+            window.setTimeout(showCards,2000);
     }
     else{//if the answer is wrong, a red star pops up for 0.5 second
         var redStar= '<img id="redStar" src="pic/redStar.png" height="50px" width="50px">';
         var resultDiv= document.getElementById("resultDiv");
         $("#scores").append(redStar);
-        window.setTimeout(removeRedStar,500);//after 0.5 sec, removeRedStar() is called
+        window.setTimeout(removeRedStar,500);
     }
+
+
 }
 
 function removeRedStar(){
