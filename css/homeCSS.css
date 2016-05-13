@@ -26,78 +26,65 @@ body{
   width: 19%;
   height : auto;
 }
+#B1:hover {
+   opacity: 0.5;
+}
+#B2:hover {
+   opacity: 0.5;
+}
 #B1{	animation-name: movingB1;}
 @keyframes movingB1 {
-  0% {
-    transform: translate(0%, 5%);
-    opacity: 100;
-  }
-  50% {
-    transform: translate(0%, 15%);
-    opacity: 100;
-  }
-  100% {
-    transform: translate(0%, 5%);
-    opacity: 100;
-  }
+  0% {transform: translate(0%, 5%);}
+  50% {transform: translate(0%, 15%);}
+  100% {transform: translate(0%, 5%);}
 }
 #B2{	animation-name: movingB2;}
 @keyframes movingB2 {
-  0% {
-    transform: translate(0%, 20%);
-    opacity: 100;
-  }
-  50% {
-    transform: translate(0%, 10%);
-    opacity: 100;
-  }
-  100% {
-    transform: translate(0%, 20%);
-    opacity: 100;
-  }
+  0% {    transform: translate(0%, 20%);}
+  50% {    transform: translate(0%, 10%);}
+  100% {    transform: translate(0%, 20%);}
 }
 #C1{	animation-name: movingC1;}
 @keyframes movingC1 {
-  0% {
-    transform: translate(0%, -100px);
-    opacity: 100;
+  0% {    transform: translate(0%, -100px);
+    opacity: 1;
   }
   50% {
     transform: translate(0%, 10px);
-    opacity: 100;
+    opacity: 0.9;
   }
   100% {
     transform: translate(0%, -100px);
-    opacity: 100;
+    opacity: 1;
   }
 }
 #C2{	animation-name: movingC2;}
 @keyframes movingC2 {
   0% {
     transform: translate(3%, 2%);
-    opacity: 100;
+    opacity: 0.8;
   }
   50% {
     transform: translate(3%, 30%);
-    opacity: 100;
+    opacity: 1;
   }
   100% {
     transform: translate(3%, 2%);
-    opacity: 100;
+    opacity: 0.8;
   }
 }
 #C3{	animation-name: movingC3;}
 @keyframes movingC3 {
   0% {
     transform: translate(3%, -50px);
-    opacity: 100;
+    opacity: 1;
   }
   50% {
     transform: translate(3%, -200px);
-    opacity: 100;
+    opacity: 0.85;
   }
   100% {
     transform: translate(3%, -50px);
-    opacity: 100;
+    opacity: 1;
   }
 }
