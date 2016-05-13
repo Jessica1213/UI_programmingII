@@ -3,7 +3,7 @@ body{
 }
 .header{
 	/*border:5px solid black;*/
-	height : 10%;
+	height : 5%;
 	text-align:center;
 	font-family:"Comic Sans MS", cursive, sans-serif;
 	font-size:xx-large;
@@ -14,11 +14,11 @@ body{
 }
 .content{
 	/*border:5px solid red;*/
-	height : 80%;
+	height : 75%;
 }
 .footer{
 	/*border:5px solid blue;*/
-	height : 5%;
+	height : 3%;
 	text-align:center;
 	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
@@ -30,11 +30,15 @@ body{
   width: 19%;
   height : auto;
 }
+#icon_help{width: 7%;}
+#icon_help:hover{
+	opacity: 0.5;
+}
 #B1:hover {
-   opacity: 0.5;
+	opacity: 0.5;
 }
 #B2:hover {
-   opacity: 0.5;
+	opacity: 0.5;
 }
 #B1{	animation-name: movingB1;}
 @keyframes movingB1 {
