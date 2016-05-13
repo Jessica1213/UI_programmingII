@@ -26,7 +26,7 @@ html {
 
 .helpImg{
     width:100%;
-    height: inherit;
+    margin-bottom: auto;
 }
 
 /* For desktop: */
