@@ -2,21 +2,21 @@ body{
   background-color: #b3e6ff;
 }
 .header{
-  border:5px solid black;
-  height : 10%;
-  text-align:center;
-  font-family:"Comic Sans MS", cursive, sans-serif;
-  font-size:xx-large;
+	/*border:5px solid black;*/
+	height : 10%;
+	text-align:center;
+	font-family:"Comic Sans MS", cursive, sans-serif;
+	font-size:xx-large;
 }
 .content{
-  border:5px solid red;
-  height : 80%;
+	/*border:5px solid red;*/
+	height : 80%;
 }
 .footer{
-  border:5px solid blue;
-  height : 5%;
-  text-align:center;
-  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	/*border:5px solid blue;*/
+	height : 5%;
+	text-align:center;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 .floating {
   /* The animation’s duration */
@@ -33,7 +33,7 @@ body{
     opacity: 100;
   }
   50% {
-    transform: translate(0%, 10%);
+    transform: translate(0%, 15%);
     opacity: 100;
   }
   100% {
@@ -44,45 +44,60 @@ body{
 #B2{	animation-name: movingB2;}
 @keyframes movingB2 {
   0% {
-    transform: translate(0%, 3%);
+    transform: translate(0%, 20%);
     opacity: 100;
   }
   50% {
-    transform: translate(0%, 7%);
+    transform: translate(0%, 10%);
     opacity: 100;
   }
   100% {
-    transform: translate(0%, 3%);
+    transform: translate(0%, 20%);
     opacity: 100;
   }
 }
 #C1{	animation-name: movingC1;}
 @keyframes movingC1 {
   0% {
-    transform: translate(0%, 2%);
+    transform: translate(0%, -100px);
     opacity: 100;
   }
   50% {
-    transform: translate(0%, 30%);
+    transform: translate(0%, 10px);
     opacity: 100;
   }
   100% {
-    transform: translate(0%, 2%);
+    transform: translate(0%, -100px);
     opacity: 100;
   }
 }
 #C2{	animation-name: movingC2;}
 @keyframes movingC2 {
   0% {
-    transform: translate(3%, 0%);
+    transform: translate(3%, 2%);
     opacity: 100;
   }
   50% {
-    transform: translate(3%, 9%);
+    transform: translate(3%, 30%);
     opacity: 100;
   }
   100% {
-    transform: translate(3%, 0%);
+    transform: translate(3%, 2%);
+    opacity: 100;
+  }
+}
+#C3{	animation-name: movingC3;}
+@keyframes movingC3 {
+  0% {
+    transform: translate(3%, -50px);
+    opacity: 100;
+  }
+  50% {
+    transform: translate(3%, -200px);
+    opacity: 100;
+  }
+  100% {
+    transform: translate(3%, -50px);
     opacity: 100;
   }
 }
