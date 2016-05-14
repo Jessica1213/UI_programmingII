@@ -1,8 +1,5 @@
-/**
- * Created by jessica on 5/8/16.
- */
-
 // Put event listeners into place
+
 window.addEventListener("DOMContentLoaded", function() {
     // Grab elements, create settings, etc.
     var canvas = document.getElementById("canvas"),
@@ -34,8 +31,17 @@ window.addEventListener("DOMContentLoaded", function() {
 
     // Trigger photo take
     document.getElementById("snap").addEventListener("click", function() {
-        context.drawImage(video, 0, 0, 360, 240);
+        context.drawImage(video, 0, 0, 320, 200);
     });
 
 }, false);
 
+function login() {
+    var username = $('#username').val();
+    var picture = $('#snap').val();
+    //get the value from input
+    console.log(username);
+    localStorage.setItem("username", username);
+    localStorage.setImage("picture", picture);
+    window.location.href = "home.html";
+}

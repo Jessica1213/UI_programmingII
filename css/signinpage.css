@@ -1,9 +1,10 @@
 body{
     background-color: #b3e6ff;
 }
-.broder{
-    border: 3px #9933cc;
+div {
+    /*border: 3px solid blueviolet;*/
 }
+
 .header{
     /*border:5px solid black;*/
     height : 10%;
@@ -28,6 +29,14 @@ body{
     text-align:center;
     font-family:"Comic Sans MS", cursive, sans-serif;
 }
+#usernameplace{
+    height : 5%;
+    width: 35%;
+    margin-top: auto;
+    margin: auto;
+    text-align:center;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+}
 /*#camera{*/
     /*border:5px darkslateblue;*/
     /*margin: auto;*/
@@ -35,12 +44,25 @@ body{
 /*}*/
 
 .camera {
-    position: fixed;
-    margin-top: auto;
+    /*position: fixed;*/
     /*margin-left: auto;*/
-    top: 55%;
-    left: 58%;
-    width: auto;
+    /*top: 55%;*/
+    /*left: 58%;*/
+    /*width: auto;*/
     /*-webkit-transform: translate(-50%, -50%);*/
-    transform: translate(-50%, -50%);
+    /*transform: translate(-50%, -50%);*/
+    height : 5%;
+    width: 35%;
+    margin-top: auto;
+    margin: auto;
+    text-align:center;
+    font-size: small;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+}
+
+.footer{
+    /*border:5px solid blue;*/
+    height : 3%;
+    text-align:center;
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }

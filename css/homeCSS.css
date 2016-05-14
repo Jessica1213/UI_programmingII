@@ -12,6 +12,10 @@ body{
 	text-align:center;
 	font-family:"Comic Sans MS", cursive, sans-serif;
 }
+#user{
+    float: right;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+}
 .content{
 	/*border:5px solid red;*/
 	height : 75%;
