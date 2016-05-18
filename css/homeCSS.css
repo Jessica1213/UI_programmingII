@@ -3,7 +3,6 @@ body{
 }
 .header{
 	/*border:5px solid black;*/
-	height : 5%;
 	text-align:center;
 	font-family:"Comic Sans MS", cursive, sans-serif;
 	font-size:xx-large;
@@ -18,7 +17,7 @@ body{
 }
 .content{
 	/*border:5px solid red;*/
-	height : 75%;
+	height : 80%;
 }
 .footer{
 	/*border:5px solid blue;*/
@@ -34,12 +33,36 @@ body{
   width: 19%;
   height : auto;
 }
-#icon_help{width: 7%;}
-#icon_help:hover{
-	opacity: 0.5;
+#help1{
+	display: none;
+	width: 15%;
+	position: absolute;
+	border: 3px solid #73AD21;
+	background-color: #b3e6ff;
+	opacity: 0.9;
+	left: 35%;
+    top: 30%;
+	z-index:1;
+}
+#help2{
+	display: none;
+	width: 15%;
+	position: absolute;
+	border: 3px solid #73AD21;
+	background-color: #b3e6ff;
+	opacity: 0.9;
+	left: 75%;
+    top: 40%;
+	z-index:1;
+}
+#a1:hover  + #help1{
+	display: block;
 }
 #B1:hover {
 	opacity: 0.5;
+}
+#a2:hover  + #help2{
+	display: block;
 }
 #B2:hover {
 	opacity: 0.5;
