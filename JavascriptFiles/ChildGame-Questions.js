@@ -2,8 +2,8 @@
 var questions = new Array();//this array is for storing the questions as strings
 var questionIndex = 0;//this variable counts and determines the questions to show
 
-questions[0] = "HORSE??? ";
-questions[1] = "9-5 = ???";
+questions[0] = "Q1 : Which one is HORSE ??? ";
+questions[1] = "Q2 : 9-5 = ???";
 //it can be continued...
 
 
