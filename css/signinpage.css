@@ -37,20 +37,7 @@ div {
     text-align:center;
     font-family:"Comic Sans MS", cursive, sans-serif;
 }
-/*#camera{*/
-    /*border:5px darkslateblue;*/
-    /*margin: auto;*/
-    /*float: inherit;*/
-/*}*/
-
-.camera {
-    /*position: fixed;*/
-    /*margin-left: auto;*/
-    /*top: 55%;*/
-    /*left: 58%;*/
-    /*width: auto;*/
-    /*-webkit-transform: translate(-50%, -50%);*/
-    /*transform: translate(-50%, -50%);*/
+#description{
     height : 5%;
     width: 35%;
     margin-top: auto;
@@ -59,9 +46,14 @@ div {
     font-size: small;
     font-family:"Comic Sans MS", cursive, sans-serif;
 }
+.screen {
+    margin-left: 35%;
+    text-align:center;
+    width: 30%;
+    height: 3%;
+}
 
 .footer{
-    /*border:5px solid blue;*/
     height : 3%;
     text-align:center;
     font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;

@@ -1,16 +1,11 @@
-name = localStorage.getItem("username");
-icon = localStorage.getItem("picture");
+name = sessionStorage.getItem("username");
+pic = sessionStorage.getItem("pic");
 
 console.log(name);
-console.log(icon);
-//$(name).appendTo("#usernameLogin");
-//$(icon).appendTo("#usericon");
+console.log(pic);
 
 $(function(){
+    //show login user name
     document.getElementById("usernameLogin").innerHTML = name;
-    document.getElementById("usericon").innerHTML = icon;
-    //get login user name
-
+    document.getElementById("usericon").src = pic;
 });
-
-

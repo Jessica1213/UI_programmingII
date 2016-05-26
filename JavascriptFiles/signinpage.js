@@ -1,7 +1,7 @@
 // Put event listeners into place
-
 window.addEventListener("DOMContentLoaded", function() {
     // Grab elements, create settings, etc.
+
     var canvas = document.getElementById("canvas"),
         context = canvas.getContext("2d"),
         video = document.getElementById("video"),
@@ -31,17 +31,21 @@ window.addEventListener("DOMContentLoaded", function() {
 
     // Trigger photo take
     document.getElementById("snap").addEventListener("click", function() {
-        context.drawImage(video, 0, 0, 320, 200);
+        var wsize = document.getElementById("canvas").width;//get canvas size
+        //console.log(wsize);
+        context.drawImage(video, 0, 0, wsize, wsize-150);
+
+        //save snapshotImage pass to home page
+        var snapshotImg = new Image();
+        snapshotImg.src = canvas.toDataURL('image/png', 0.5); //Second param is jpg quality
+        sessionStorage.setItem("pic", snapshotImg.src); //save the picture src
     });
 
 }, false);
 
 function login() {
     var username = $('#username').val();
-    var picture = $('#snap').val();
-    //get the value from input
     console.log(username);
-    localStorage.setItem("username", username);
-    localStorage.setImage("picture", picture);
+    sessionStorage.setItem("username", username);
     window.location.href = "home.html";
 }

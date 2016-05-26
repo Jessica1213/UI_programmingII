@@ -6,33 +6,40 @@
     <link rel="stylesheet" href="css/signinpage.css">
     <script src="JavascriptFiles/Library/jquery-1.12.0.js"></script>
     <script src="JavascriptFiles/signinpage.js"></script>
+
 </head>
 <body>
 <div class="header">Sky Wonder</div>
+
+<!--Introduntion for this page-->
 <div  id="intro">
     Let's take a photo for your player avatar
 </div>
 
+<!--warning message-->
 <div id="warning">
     <b>Using Chrome or FireFox, in order to take your picture!</b>
 </div>
 
-<div class="camera">
-    <video id="video" width="320" height="200" autoplay></video>
-</div>
-<div class="camera">
+<!--video screen-->
+<video class="screen" id="video" autoplay></video>
+
+<!--screen shot description-->
+<div id="description">
     You can take as much as you want, until you get a perfect picture!
     <input type="image" id="snap" onclick="" src="pic/camera.png" width="15%">
 </div>
-<div class="camera">
-    <canvas id="canvas" width="320" height="200" ></canvas>
-</div>
+
+<!--canvas for drawing screen shot picture-->
+<canvas class="screen" id="canvas" ></canvas>
+
+<br>
+<!--Enter username-->
 <div id="usernameplace">
     Pick a nick name
     <input type="text" id="username" name="username" placeholder="" onfocus="this.value=''" required>
-    <!--<input type="image" id="snap" onclick="" src="pic/camera.png" width="15%">-->
     <br>
-    <img id="start" onclick="login()" src="pic/Start.png" width="10%"><br>
+    <form onclick="login()"><img id="start" src="pic/Start.png" width="10%"></form><br>
 </div>
 
 <div class="footer">©2016 MariaRajabzadehNamaghi PeiChunChen JiaYingLin LincolnTam, All Rights Reserved.</div>

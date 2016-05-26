@@ -1,6 +1,9 @@
 body{
   background-color: #b3e6ff;
 }
+div {
+    /*border:2px solid black;*/
+}
 .header{
 	/*border:5px solid black;*/
 	text-align:center;
@@ -8,16 +11,25 @@ body{
 	font-size:xx-large;
 }
 .intro{
+    margin-top: auto;
+    margin: auto;
 	text-align:center;
 	font-family:"Comic Sans MS", cursive, sans-serif;
 }
 #user{
-    float: right;
+    width: 20%;
+    /*display: inline;*/
+    /*border:2px solid black;*/
+    margin-left: 80%;
     font-family:"Comic Sans MS", cursive, sans-serif;
+}
+#usericon{
+  width: 30%;
 }
 .content{
 	/*border:5px solid red;*/
-	height : 80%;
+	height: 80%;
+    margin: auto;
 }
 .footer{
 	/*border:5px solid blue;*/
@@ -33,9 +45,11 @@ body{
   width: 19%;
   height : auto;
 }
+
 #help1{
 	display: none;
-	width: 15%;
+	width: 20%;
+    height: 50%;
 	position: absolute;
 	border: 3px solid #73AD21;
 	background-color: #b3e6ff;
@@ -43,10 +57,12 @@ body{
 	left: 35%;
     top: 30%;
 	z-index:1;
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 #help2{
 	display: none;
-	width: 15%;
+	width: 20%;
+    height: 50%;
 	position: absolute;
 	border: 3px solid #73AD21;
 	background-color: #b3e6ff;
@@ -54,6 +70,7 @@ body{
 	left: 75%;
     top: 40%;
 	z-index:1;
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 #a1:hover  + #help1{
 	display: block;
@@ -111,15 +128,15 @@ body{
 #C3{	animation-name: movingC3;}
 @keyframes movingC3 {
   0% {
-    transform: translate(3%, -50px);
+    transform: translate(3%, -20px);
     opacity: 1;
   }
   50% {
-    transform: translate(3%, -200px);
+    transform: translate(3%, -150px);
     opacity: 0.85;
   }
   100% {
-    transform: translate(3%, -50px);
+    transform: translate(3%, -20px);
     opacity: 1;
   }
 }
