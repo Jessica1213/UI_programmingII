@@ -47,6 +47,11 @@ div {
   height : auto;
 }
 
+.helpstyle {
+    font-family:fantasy, cursive, Serif;
+    font-size: x-large;
+}
+
 #help1{
 	display: none;
 	width: 20%;
