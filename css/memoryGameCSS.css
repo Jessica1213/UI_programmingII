@@ -15,7 +15,7 @@ body{
 #QuestionDiv{
     height: 20vh;
     background-color: #e6ffe6;
-	border-radius: 10px 0px 0px 10px;
+	border-radius: 10px;
 	text-align: center;
 	font-family:"Comic Sans MS", cursive, sans-serif;
 	color:#004d4d;
@@ -28,10 +28,10 @@ body{
 
 #resultDiv{
     background-color: #ffe6ff;
-    height: 90vh;
+    height: 85vh;
     width: 10%;
     margin-left: 90%;
-	border-radius: 10px 10px 10px 0px;
+	border-radius: 10px;
 	font-family:"Comic Sans MS", cursive, sans-serif;
 }
 
