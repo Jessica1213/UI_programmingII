@@ -7,16 +7,17 @@
     <script src="JavascriptFiles/home.js"></script>
 </head>
 <body>
-<embed src="music/BGM.mp3" autostart="true" hidden="true" loop="true">
-    <div class="header">Sky Wonder</div>
+	<!--Div for title and play/pause background music-->
+    <div class="header">Sky Wonder<audio id="music2" src="music/BGM.mp3" autoplay="autoplay" loop="loop">Your browser not support audio.</audio> 
+	<a href="javascript:playPause();"><img src="pic/On.png"  width="30" height="30" id="music_btn2" border="0"></a> </div>
     <div class="intro">Welcome to Sky Wonder!! There are small games for children. Enjoy :)</div>
     <div id="user"> <!--Div for account data-->
         Hi &nbsp;
         <span id="usernameLogin"></span>
         &nbsp;&nbsp;&nbsp;
-        <img id="usericon">
+        <img id="usericon" width="50" height="50">
     </div>
-    <div class="content">
+    <div class="content"><!--Div for two link, and help page div-->
 			<img class="floating" id="C1" SRC="pic/C1.png">
 			<a href="memoryGame.html" id="a1"><img class="floating" id="B1" SRC="pic/B1.png"></a>
 			<div id="help1">
@@ -31,7 +32,7 @@
 				You should drag the answer image and drop it on to the basket.</p></div>
 			<img class="floating" id="C3" SRC="pic/C1.png">
     </div>
-    <br>
+    <br><!--Div for Copyright Notice-->
     <div class="footer">©2016 MariaRajabzadehNamaghi PeiChunChen JiaYingLin LincolnTam, All Rights Reserved.</div>
 </body>
 </html>
