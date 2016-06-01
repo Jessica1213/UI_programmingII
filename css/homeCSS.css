@@ -24,11 +24,12 @@ div {
     font-family:"Comic Sans MS", cursive, sans-serif;
 }
 #usericon{
-  width: 30%;
+    width: 20%;
+    height: 5%;
 }
 .content{
 	/*border:5px solid red;*/
-	height: 80%;
+	height: 78%;
     margin: auto;
 }
 .footer{
