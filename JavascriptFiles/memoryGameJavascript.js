@@ -127,3 +127,13 @@ function makeStar(){
     var resultDiv= document.getElementById("resultDiv");
     $("#scores").append(star);
 }
+
+function warning(){
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+    console.log("w"+w);
+    console.log("h"+h);
+    if(w<620 || h<635){
+        alert("Use bigger window size to have better experience")
+    }
+}

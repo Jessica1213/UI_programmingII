@@ -8,7 +8,7 @@
     <script src="JavascriptFiles/ChildGame-Questions.js"></script>
 
 </head>
-<body>
+<body onresize="warning()">
 	<!--Play/pause background music-->
     <audio id="music2" src="music/BGM3.mp3" autoplay="autoplay" loop="loop">Your browser not support audio.</audio> 
 	<a href="javascript:playPause();"><img src="pic/On.png" position="absolute" width="30" height="30" id="music_btn2" border="0"></a>
@@ -28,7 +28,7 @@
     </div>
     <div id="resultDiv"><!--This div is used to show the scores and the basket -->
         <div id="scores"><h3>Your Score:</h3></br></div>
-        <div id="basket" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="pic/basket.png" height="130" width="130"></div>
+        <div id="basket" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="pic/basket.png" height="100%" width="100%"></div>
     </div>
     ​
 
