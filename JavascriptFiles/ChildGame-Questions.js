@@ -1,3 +1,15 @@
+function playPause() { //play and pause backgroundmusic
+    var music = document.getElementById('music2'); 
+    var music_btn = document.getElementById('music_btn2'); 
+    if (music.paused){ 
+        music.play(); 
+        music_btn.src = 'pic/On.png'; 
+    } 
+    else{ 
+        music.pause(); 
+        music_btn.src = 'pic/Off.png';  
+    } 
+} 
 
 var questions = new Array();//this array is for storing the questions as strings
 var questionIndex = 0;//this variable counts and determines the questions to show
