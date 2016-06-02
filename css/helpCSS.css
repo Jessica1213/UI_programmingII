@@ -23,7 +23,11 @@ html {
     color: #ffffff;
     padding: 15px;
 }
-
+  .backbutton {
+    font-family:fantasy, cursive, Serif;
+    font-size: medium;
+    color: blue;
+    }
 .helpImg{
     width:100%;
     margin-bottom: auto;
@@ -54,14 +58,4 @@ html {
         margin-bottom: auto;
     }
 
-    .button {
-        background-color: #4CAF50; /* Green */
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-    }
 }
