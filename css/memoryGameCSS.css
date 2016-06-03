@@ -41,6 +41,11 @@ body{
 	color:#801772;
 }
 
+.backbutton {
+  font-family:fantasy, cursive, Serif;
+  font-size: medium;
+  color: blue;
+  }
 
 div.a {
     width: 100px;

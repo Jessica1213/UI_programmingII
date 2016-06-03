@@ -35,6 +35,11 @@ body{
     text-align: center;
 }
 
+.backbutton {
+  font-family:fantasy, cursive, Serif;
+  font-size: medium;
+  color: blue;
+  }
 
 div.a {
     width: 100px;
@@ -77,4 +82,3 @@ div.d {
     height: 20vh;
     width: 100%;
 }
-
